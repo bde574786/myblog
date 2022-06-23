@@ -17,11 +17,8 @@ import com.tencoding.blog.service.UserService;
 @Controller
 public class UserController {
 
-	private UserService userService;
-	
 	@Autowired
 	private HttpSession httpSession;
-	
 	
 	
 	@GetMapping({"/", ""})
@@ -52,11 +49,14 @@ public class UserController {
 		return "user/join_form";
 	}
 	
-	@GetMapping("/user/writing")
-	public String writingForm() {
-		System.out.println("writing");
-		return "writing";
-	}
+
+	@GetMapping("/writing")
+		public String writingForm() {
+			System.out.println("writing");
+			return "writing";
+		}
+	
+	
 	
 	@GetMapping("/user/logout")
 	public String logout() {
