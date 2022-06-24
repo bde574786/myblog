@@ -26,16 +26,6 @@ public class UserController {
 		return "home";
 	}
 	
-	
-//	@PostMapping("/blog/user")
-//	public ResponseDto<Integer> save(@RequestBody User user) {
-//		// DB (벨리데이션)
-//		System.out.println("UserApiController 호출됨!!!");
-//	
-//		int result = userService.saveUser(user);
-//		return new ResponseDto<Integer>(HttpStatus.OK.value(), result);
-//	}
-	
 	@GetMapping("/user/login")
 	public String loginForm() {
 		System.out.println("login");
@@ -53,7 +43,7 @@ public class UserController {
 	@GetMapping("/writing")
 		public String writingForm() {
 			System.out.println("writing");
-			return "writing";
+			return "writingForm";
 		}
 	
 	

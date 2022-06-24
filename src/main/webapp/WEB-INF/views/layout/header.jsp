@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+ <%@ page language="java" contentType="text/html; charset=UTF-8"
 pageEncoding="UTF-8"%> <%@ taglib prefix = "c" uri =
 "http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
@@ -88,9 +88,8 @@ pageEncoding="UTF-8"%> <%@ taglib prefix = "c" uri =
         <div class="row gx-4 gx-lg-5">
           <div class="col-lg-6">
             <h1 class="mt-5">My Blog</h1>
-            <p>
-              아는 코드도 다시보기
-            </p>
+            <br/>
+            <br/>
           </div>
         </div>
       </div>

@@ -39,7 +39,7 @@ public class BoardController {
 	
 	
 	@GetMapping({"list" })
-	public String list(@PageableDefault(size = 5, sort = "id", direction = Direction.DESC) Pageable pageable,
+	public String list(@PageableDefault(size = 3, sort = "createDate", direction = Direction.DESC) Pageable pageable,
 			Model model) {
 		Page<Board> boards = boardService.list(pageable);
 		System.out.println("list들어옴");
@@ -50,7 +50,7 @@ public class BoardController {
 	
 	@GetMapping("/listPage")
 	@ResponseBody
-	public Page<Board> listPage(@PageableDefault(size = 1, sort = "id", direction = Direction.DESC) Pageable pageable,
+	public Page<Board> listPage(@PageableDefault(size = 1, sort = "createDate", direction = Direction.DESC) Pageable pageable,
 			Model model) {
 		Page<Board> boards = boardService.list(pageable);
 		System.out.println("listpage 들어옴");

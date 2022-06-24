@@ -8,9 +8,12 @@
 					<div class = "card col-md-12 m-2">
 			
 						<div class = "card-body">
-							<h4 class="card-title">${board.title}</h4>
+							<h3>${"id : "} ${board.id}</h3>
+							<h5 class="card-title">${"제목 : "} ${board.title}</h5>
+							<h6 class = "createDate">${board.createDate}</h6>
 							<a href="/blog/board/${board.id}" class="btn btn-primary">상세보기</a>
 						</div>
+						
 					</div>
 				</c:forEach>
 					<br/>
@@ -36,6 +39,10 @@
 				</c:choose>
 				
 			</ul>
+			
+			<button type = "button" onclick="location.href='/blog/writing'" style="float:right" class = "btn btn-primary">글 쓰기</button>
+			
+			
 			</main>
 	
 	

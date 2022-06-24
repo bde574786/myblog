@@ -30,8 +30,8 @@ pageEncoding="UTF-8"%> <%@ include file="layout/header.jsp" %>
         ></textarea>
       </div>
       <br />
-      <button type="button" onclick="saveBoard()" class="btn btn-primary">
-        글쓰기
+      <button type="button" style="float:right" onclick="saveBoard()" class="btn btn-primary">
+        글 저장
       </button>
     </form>
     <br />
@@ -61,10 +61,10 @@ pageEncoding="UTF-8"%> <%@ include file="layout/header.jsp" %>
         .then((res) => res.text())
         .then((res) => {
           if (res == "ok") {
-            alert("글쓰기 성공");
+            alert("글 쓰기 성공");
             location.href = "/blog/list";
           } else {
-            alert("글쓰기 실패");
+            alert("글 쓰기 실패");
           }
         });
     } // end of saveBoard
